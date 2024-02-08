@@ -1,11 +1,17 @@
-//always start with importing our scanner so we can use it!
+/*//always start with importing our scanner so we can use it!
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         //I've already set up a scanner with the name 'sc' for you!
-        Scanner sc = new Scanner(System.in);
+        Scanner og = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int input = og.nextInt();
+        while()
 
+        }
+
+/*
         //here's a good working example for you to reference!
         //first: we ask our user for our prompt
         System.out.println("What is your name? ");
@@ -23,10 +29,10 @@ public class Main {
         int num1 = 10;
         int num2 = 37;
         //?
-
+*/
         
-
+/*
     }
 }
-
+*/
 
