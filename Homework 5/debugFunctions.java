@@ -12,8 +12,8 @@ I give you two fully working method examples with and without parameters and cal
 */
 
 import java.util.Scanner;
-public class Main {
-    public static void main(String[] args) {
+public class debugFunctions {
+    public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
 
 
@@ -26,18 +26,60 @@ public class Main {
 
     System.out.println("im going to print out the word Dog now.");
     printDog();
+
+//not really asking for input, but plug in :)
+    printFact(7);
+
+    everyOther();
+
+    reverse();
+
+    
       
+    }
+//prob 1
+    public static void printFact(int num){
+        int factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+    System.out.println("The factorial of " + num + " is " + factorial);
+  }
+
+//prob 2
+    public static void everyOther(){
+        Scanner og = new Scanner(System.in);
+        System.out.println("Enter a number:");
+        String input = og.nextLine();
+        
+        int sum = 0;
+        for (int i = 0; i < input.length(); i += 2) {
+            int digit = Character.getNumericValue(input.charAt(i));
+            sum += digit;
+        }
+        
+        System.out.println("Sum of every other digit: " + sum);
+    }
+    
+    //prob 5
+    public static void reverse() {
+        Scanner yurp = new Scanner(System.in);
+    System.out.println("Enter a string:");
+    String input = yurp.nextLine();
+        // string builder go brrrr, loops are scary
+    StringBuilder flip = new StringBuilder(input).reverse();
+    System.out.println("String reversed is: " + flip);
     }
 
   
-    public static int add(int zyx, int tuv){
+     public static int add(int zyx, int tuv){
 
 
         return(zyx + tuv);
 
 
     }
-
+    
   
     public static void printDog(){
         System.out.println("Dog");
@@ -45,3 +87,4 @@ public class Main {
 
   
 }
+
