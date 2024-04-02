@@ -6,6 +6,7 @@ feel free to google some inspiration though :)
 */
 
 public class functions {
+    //finds the min-max of an array
     public static void main(String[] args) {
         int[] test = {17, 40, 27, 2, 393, 191};
         upDown(test);
