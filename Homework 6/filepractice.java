@@ -13,6 +13,7 @@ import java.util.Scanner;
 
 public class filepractice {
     public static void main(String[] args){
+        //HI :)
         int gpaNames = 0;
         //do you need something to start?
         

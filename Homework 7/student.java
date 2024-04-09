@@ -19,6 +19,17 @@ public class student{
         id = i;
     }
     
+    public boolean honorStatus() {
+        return gpa > 3.6;
+    }
+
+    public boolean freeLunch() {
+        return id == randID;
+    }
+
+    public String getName() {
+        return name;
+    }
     //new method
 
     
