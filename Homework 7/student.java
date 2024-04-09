@@ -7,32 +7,32 @@ check each of the students in main
 and see if any students match that id, if they do they get free lunch that day, yay!) compare a randomly generated id and the
 id of the student to print the appropriate response.
  */
-public class student{
+public class student {
     String name;
     String year;
     double gpa;
     int id;
+    //check
     public student(String n, String y, double g, int i){
         name = n;
         year = y;
         gpa = g;
         id = i;
     }
-    
+
+
     public boolean honorStatus() {
         return gpa > 3.6;
     }
 
-    public boolean freeLunch() {
-        return id == randID;
-    }
 
     public String getName() {
         return name;
     }
-    //new method
 
-    
-    //new method
 
+    public boolean receivesFreeLunch(int randomId) {
+        return id == randomId;
+    }
 }
+
